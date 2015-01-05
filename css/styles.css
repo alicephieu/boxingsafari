@@ -1,0 +1,351 @@
+/******** GENERAL STYLE *********/
+
+body {
+    font-family: cubanonormal;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+@font-face {
+    font-family: 'cubanonormal';
+    src: url('../font/cubano-regular-webfont.eot');
+    src: url('../font/cubano-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/cubano-regular-webfont.woff2') format('woff2'),
+    url('../font/cubano-regular-webfont.woff') format('woff'),
+    url('../font/cubano-regular-webfont.ttf') format('truetype'),
+    url('../font/cubano-regular-webfont.svg#cubanonormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.button.round {
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: cubanonormal;
+    font-size: 1.1em;
+
+}
+
+.button:hover, .button:focus {
+    background-color: white;
+    color: rgb(198, 24, 57);
+}
+
+/******** TOP BAR *********/
+
+
+.top-bar,
+#main-nav ul li > a {
+    background: #EC3030;
+}
+
+#menu {
+    color: white;
+}
+
+.top-bar, #main-nav ul.right li > a:hover {
+    background: #982a2a;
+}
+
+.top-bar,
+#main-nav ul li > h1 {
+    background-color: rgb(236, 48, 48);
+}
+
+.top-bar-section ul li > a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.top-bar.expanded .toggle-top-bar a {
+    color: #fff;
+}
+
+/* Hamburger Icon */
+.top-bar.expanded .toggle-topbar a span::after {
+    box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;
+}
+
+#main-nav img {
+    max-height: 40px;
+}
+
+/******** HEADER *********/
+
+
+
+#header {
+    background-image: url('../img/background.jpg');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#header .row {
+    padding: 40px 0 50px 0;
+}
+
+#arrow-header .arrow-down {
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #F1EF76;
+    transform: translateX(-50%);
+}
+
+
+@-webkit-keyframes fall-down {
+    from {
+        -webkit-transform: translateY(-300px);
+        -moz-transform: translateY(-300px);
+        -ms-transform: translateY(-300px);
+        -o-transform: translateY(-300px);
+        transform: translateY(-300px);
+    }
+    to {
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+#logo-drop {
+    -webkit-animation-name: fall-down;
+    -moz-animation-name: fall-down;
+    -o-animation-name: fall-down;
+    animation-name: fall-down;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-timing-function: cubic-bezier(.69, .05, .57, 2);
+    -moz-animation-timing-function: cubic-bezier(.69, .05, .57, 2);
+    -o-animation-timing-function: cubic-bezier(.69, .05, .57, 2);
+    animation-timing-function: cubic-bezier(.69, .05, .57, 2);
+    /*-webkit-animation-delay: 1s;*/
+    /*-moz-animation-delay: 1s;*/
+    /*-o-animation-delay: 1s;*/
+    /*animation-delay: 1s;*/
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+}
+
+
+
+/******** SIGN UP *********/
+#sign-up {
+    background-color: #5a463f;
+    text-align: center;
+    padding: 50px;
+}
+
+#sign-up p {
+    color: rgb(255, 239, 187);
+}
+
+#sign-up .sign-up-description {
+    max-width: 600px;
+}
+
+#mc_embed_signup {
+    max-width: 500px;
+    margin: auto;
+}
+
+#arrow-sign-up .arrow-down {
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #5A463F;
+    transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 40.063em) {
+    #sign-up {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 64.063em) {
+    #sign-up {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+/******** GRAB YOUR GLOVES *********/
+#grab-your-gloves {
+    background-color: #FFDA31;
+    text-align: center;
+    padding: 50px;
+ }
+
+
+@media only screen and (min-width: 40.063em) {
+    #grab-your-gloves {
+        text-align: left;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 64.063em) {
+    #grab-your-gloves{
+        text-align: left;
+        font-size: 1.5em;
+    }
+}
+
+#arrow-grab-your-gloves .arrow-down {
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #FFDA31;
+    transform: translateX(-50%);
+}
+
+
+/******** BECOME THE KING *********/
+#become-the-king {
+    background-color: #96b71d;
+    text-align: center;
+    padding: 50px;
+}
+
+@media only screen and (min-width: 40.063em) {
+    #become-the-king {
+        text-align: left;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 64.063em) {
+    #become-the-king {
+        text-align: left;
+        font-size: 1.5em;
+    }
+}
+
+#arrow-become-the-king .arrow-down {
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #96B71D;
+    transform: translateX(-50%);
+}
+
+/******** MEDIA *********/
+#media {
+    background-color: #66cccc;
+    text-align: center;
+    padding: 50px;
+}
+
+#media .previewImage {
+    width: 100%;
+    margin: 30px 0;
+}
+
+#media ul.screenshots img {
+    width: 100%;
+}
+
+#arrow-media .arrow-down {
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #66CCCC;
+    transform: translateX(-50%);
+}
+
+
+
+/******** ABOUT *********/
+#about {
+    background-color: #c61839;
+    text-align: center;
+    padding: 50px;
+}
+
+#about img.dijiko_logo {
+    max-width: 200px;
+    margin: 20px 0;
+}
+
+#about p {
+    color: white;
+    max-width: 700px;
+    line-height: 1.4;
+    margin: 20px auto;
+
+}
+
+#about ul.social-media-icons img {
+    max-height: 80px;
+}
+
+.social-media-icons {
+    max-width: 370px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 40.063em) {
+    #about {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 64.063em) {
+    #about {
+        font-size: 1.5em;
+    }
+}
+
+/******** FOOTER *********/
+#footer {
+    background-color: #8F0922;
+    text-align: center;
+    padding: 20px;
+}
+
+#footer p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 0.1em;
+    font-size: 80%;
+    text-transform: uppercase;
+}
+
+#footer a {
+    color: rgb(255, 239, 187);
+}
