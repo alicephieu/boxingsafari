@@ -6,6 +6,7 @@ body {
 
 p {
     font-size: 1.5em;
+    line-height: 1.5em;
 }
 
 @font-face {
@@ -84,7 +85,7 @@ p {
     background-position: center;
     background-size: auto;
     text-align: center;
-    padding: 20px;
+
 }
 
 #header .row {
@@ -235,6 +236,8 @@ p {
     text-align: center;
     padding: 50px;
 }
+
+
 
 @media only screen and (min-width: 40.063em) {
     #become-the-king {
